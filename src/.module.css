@@ -1,0 +1,555 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  /* ---------------- Nav Start --------------------- */
+  
+  .MainNav {
+    width: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding: 3em;
+  }
+  
+  .NavLogo {
+    transform: scale(1.25);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+  }
+  
+  .NavLinks {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    font-size: 1.8em;
+  }
+  
+  /* ---------------- Nav End --------------------- */
+  
+  /* ---------------- Header Start --------------------- */
+  
+  .HeaderContainer {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: #495e57;
+    display: grid;
+    margin-bottom: 15vh;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .HeaderMain {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12em;
+  }
+  
+  .HeaderLeftSection {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Little Lemon */
+  .HeaderHeading {
+    font-family: "Inter";
+    font-size: 5.4em;
+    font-weight: 400;
+    color: #f4ce14;
+  }
+  
+  /* Chicago */
+  .HeaderSubtext {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 3.6em;
+    color: #edefee;
+    margin-bottom: 0.3em;
+  }
+  
+  /* We are a family owned Mediterranean restaurant */
+  .HeaderText {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 2em;
+    color: #edefee;
+    inline-size: 20em;
+    margin-bottom: 1.5em;
+  }
+  
+  /* Rectangle 9 */
+  .HeaderButton {
+    position: block;
+    width: 12em;
+    height: 3em;
+    background: #f4ce14;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  /* Reserve a Table */
+  .HeaderButtonText {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #333333;
+  }
+  
+  /* Rectangle 10 */
+  .HeaderImage {
+    position: absolute;
+    top: 7vh;
+    left: 65vw;
+    width: 18vw;
+    height: 100%;
+    border-radius: 1.6em;
+  }
+  
+  /* ---------------- Header End --------------------- */
+  
+  /* ---------------- Main Start --------------------- */
+  
+  /* This weeks specials! */
+  
+  .MainSection {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: 1fr 1fr; */
+    place-items: center;
+    justify-content: space-between;
+  }
+  
+  .MainHeading {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 3em;
+    color: #333333;
+  }
+  
+  /* Rectangle 11 */
+  .MainHeadingButton {
+    width: 16em;
+    height: 3em;
+    background: #f4ce14;
+    border-radius: 16px;
+    border: none;
+  }
+  
+  /* Online Menu */
+  .MainHeadingButtonText {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #333333;
+  }
+  
+  /* ---------------- Main End --------------------- */
+  
+  /* ---------------- MainCard Start --------------------- */
+  
+  .MainCardContainer{
+    height: 75vh;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 35vh);
+    column-gap: 8vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MainCardSection{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 45% 15% 25% 15%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(232, 232, 232);
+    /* padding: 2em; */
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+  
+  .MainCardImage{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+  
+  .MainCardNamePrice{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    font-size: 15px;
+  }
+  
+  .MainCardPrice{
+    color: #495e57;
+    font-size: 15px;
+  }
+  
+  .MainCardDescription{
+    color: gray;
+    font-size: 15px;
+    padding: 2em;
+    font-weight: 500;
+  }
+  
+  .MainCardOrder{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 70% 30%;
+    justify-content: left;
+    align-items: center;
+    padding: 2em;
+    font-size: 16px;
+  }
+  
+  .MainCardDeliveryIcon{
+    color: black;
+    font-size: 22px;
+  }
+  
+  /* ---------------- MainCard End --------------------- */
+  
+  /* ---------------- Testimonials Start --------------------- */
+  
+  .TestimonialsSection {
+    width: 100%;
+    background-color: #495e57;
+    padding: 1.5em 0;
+  }
+  
+  .TestimonialsHeading {
+    font-size: 3em;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+  }
+  
+  /* ---------------- Testimonials End --------------------- */
+  
+  /* ---------------- TestimonialsCard End --------------------- */
+  
+  .TestimonialsCardContainer{
+    width: 100%;
+    height: 65vh;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 40vh);
+    column-gap: 5vh;
+  }
+  
+  .TestimonialsCardSection{
+    width: 100%;
+    height: 56vh;
+    color: black;
+    border: 6px solid #f4ce14;
+    border-radius: 16px;
+    padding: 1.5em 2em;
+    display: grid;
+    grid-template-rows: 3fr 1fr 2fr 1fr;
+    row-gap: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color:#edefee;
+  }
+  
+  .TestimonialsCardImage{
+    height: 22vh;
+    width: 12vw;
+    border-radius: 16px;
+    display: grid;
+    justify-self: center;
+  }
+  
+  .TestimonialsCardName{
+    font-size: 18px;
+    font-weight: 700;
+    display: grid;
+    justify-self: center;
+  }
+  
+  .TestimonialsCardComment{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .TestimonialsCardRating{
+    color: #495e57;
+  }
+  
+  .TestimonialsCardRating:hover{
+    content: "5";
+  }
+  
+  /* ---------------- TestimonialsCard End --------------------- */
+  
+  
+  /* ---------------- About Start --------------------- */
+  
+  .AboutSection {
+    height: 65vh;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4ce14;
+  }
+  
+  .AboutLeftSection {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .AboutHeading {
+    font-weight: 700;
+    font-size: 2.4em;
+  }
+  
+  .AboutSubHeading {
+    font-weight: 500;
+    font-size: 1.8em;
+  }
+  
+  .AboutSubtext {
+    font-weight: 400;
+    font-size: 1.5em;
+    inline-size: 30em;
+  }
+  
+  .AboutImageA {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    height: 25em;
+    width: 24em;
+  }
+  
+  .AboutImageB {
+    position: absolute;
+    top: 15%;
+    left: 56%;
+    height: 25em;
+    width: 24em;
+  }
+  
+  /* ---------------- About End --------------------- */
+  
+  /* ---------------- Footer Start --------------------- */
+  
+  .FooterStyling {
+    width: 100%;
+    background-color: #495e57;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .FooterStyling ul {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: white;
+    padding-bottom: 1.1em;
+  }
+  
+  .FooterStyling li {
+    font-weight: 400;
+    color: white;
+    font-size: 1.5em;
+    list-style: none;
+    line-height: 1.5em;
+  }
+  
+  .FooterLogo {
+    display: grid;
+    justify-self: center;
+    transform: scale(0.8);
+  }
+  
+  .LinksStyling {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    color: white;
+  }
+  
+  /* ---------------- Footer End --------------------- */
+  
+  /* ---------------- BookingPage Start --------------------- */
+  
+  /* ---------------- BookingPage End --------------------- */
+  
+  /* ---------------- BookingForm Start --------------------- */
+  
+  .BookingForm {
+    width: 45%;
+    margin: 3em auto;
+    outline: 2px solid black;
+    outline-offset: 2em;
+    border-radius: 16px;
+    display: grid;
+    font-size: 2em;
+  }
+  
+  sup{
+      color: red;
+  }
+  
+  input:focus:invalid{
+    border: 2px solid red;
+  }
+  
+  .BookingError{
+    color: red;
+    font-size: 0.7em;
+  }
+  
+  .BookingFormButton{
+    height: 6vh;
+    width: 11vw;
+    color: black;
+    background-color: #f4ce14;
+    border: none;
+    border-radius: 16px;
+    margin: 2em auto 0 auto;
+    cursor: pointer;
+    box-shadow: 2px 2px gray;
+  }
+  
+  /* ---------------- BookingForm End --------------------- */
+  
+  /* ---------------- BookingConfirmed End --------------------- */
+  
+  .ConfirmedSection{
+    height: 60vh;
+    background-color: #f4ce14;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    padding: 2em;
+  }
+  
+  .ConfirmedSectionInner{
+    display: grid;
+    font-size: 1.4em;
+  }
+  
+  .ConfirmedImage{
+    height: 50vh;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .ConfirmedThumbsUpIcon{
+    font-size: 6em;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .ConfirmedText{
+    font-size: 2.4em;
+  }
+  
+  .ConfirmedRestaurantIcon{
+    font-size: 2em;
+    align-self: end;
+    justify-self: end;
+  }
+  
+  /* ---------------- BookingConfirmed End --------------------- */
+  
+  /* ---------------- Media Queries Start --------------------- */
+  
+  @media (max-width: 400px){
+    html{
+      font-size: 85%;
+      max-width: 400px;
+    }
+    .MainCardContainer{
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(3, 35vh);
+      justify-content: center;
+      align-items: center;
+    }
+    .NavLinks {
+      display: none;
+    }
+    .HeaderImage {
+      display: none;
+     }
+     .FooterStyling {
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(3,50vw);
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  }
+  
+  @media (max-width: 900px){
+    html{
+      font-size: 65%;
+    }
+    .NavLinks {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1190px){
+    html{
+      font-size: 85%;
+    }
+    .NavLinks {
+      width: 80vw;
+    font-size: 1.4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2em;
+    justify-content: space-evenly;
+    }
+  .HeaderImage {
+   left: 78vw;
+  }
+  }
+    /* ---------------- Media Queries End --------------------- */
+  
